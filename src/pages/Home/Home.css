@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body {
+    background-color: rgb(8, 15, 36);
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lander {
+    background: black url(/public/images/land7.png) repeat 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+
+.lander {
+    height: 100vh;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+
+}
+
+.slogan-wrapper {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    width: 100%;
+
+}
+
+.logo-wrapper {
+    text-align: center;
+}
+
+
+.bg-1 {
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+}
+
+.heading-lander-wrapper {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+}
+
+span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 135.8px;
+    background: linear-gradient(90deg, #54d1cc, #4ba1eb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25.8px;
+    background-color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.scroll {
+    display: flex;
+    position: absolute;
+    bottom: 8rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.scroll-2 {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1.5rem;
+    border-width: 4px;
+    width: 35px;
+    height: 64px;
+}
+
+.scroll-3 {
+    margin-bottom: 0.25rem;
+    border-radius: 9999px;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.lander-button {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 50px;
+    padding: 3px;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-color: #4ba1eb;
+}
+
+button {
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: #0d0d0d;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+button:first-child {
+    color: #206592;
+    border-color: #206592;
+}
+
+button:last-child {
+    color: white;
+    border-color: #4ba1eb;
+}
+
+button:before,
+button:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+button:before {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:after {
+    width: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:hover:before,
+button:hover:after {
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+
+button:hover {
+    color: #54d1cc;
+}
+
+button:hover:first-child {
+    background: #206592;
+}
+
+button:hover:last-child {
+    background: #0b1457;
+
+}
